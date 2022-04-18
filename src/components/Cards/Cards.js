@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./Card/Card";
 import data from "./data";
-import { Row, Container } from "react-bootstrap";
+import { Row, Container, Button } from "react-bootstrap";
 
 function Cards() {
   const cardItem = data.map((item) => {
@@ -11,7 +11,8 @@ function Cards() {
     <>
       <section className="cards">
         <Container>
-          <Row className="">{cardItem}</Row>
+          <div className="">{cardItem}</div>
+        <Button>Добавь неделю</Button>
         </Container>
       </section>
     </>
