@@ -1,0 +1,9 @@
+@import "./Card/Card";
+
+.cards {
+  padding: 20px 0;
+  & .container {
+    display: flex;
+    gap: 1rem;
+  }
+}
