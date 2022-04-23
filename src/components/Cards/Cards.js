@@ -1,18 +1,20 @@
-import React from "react";
+
 import Card from "./Card/Card";
 import data from "./data";
-import { Row, Container, Button } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
-function Cards() {
+
+function Cards(props) {
   const cardItem = data.map((item) => {
-    return <Card key={item.id} {...item} />;
+    return <Card weeksCounter={props.weeksCounter} key={item.id} {...item} />;
   });
+
+
   return (
     <>
       <section className="cards">
         <Container>
-          <div className="">{cardItem}</div>
-        <Button>Добавь неделю</Button>
+          <div className="d-flex flex-column gap-1">{cardItem}</div>
         </Container>
       </section>
     </>
