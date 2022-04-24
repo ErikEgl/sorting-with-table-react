@@ -1,16 +1,16 @@
 import React, { useState } from "react";
-import Cards from "../Cards/Cards";
+import Cards from "../Cards";
 import ReactDOM from "react-dom";
 import { Button, Row, Container, Table } from "react-bootstrap";
-import { result, allMondaysOfAYear } from "./getDateAndWeekNum";
+import { getWeekNumber, getAllMondaysOfAYear } from "../../helpers";
 
 let i = 0;
-let currentWeek = result[1]
 
 function WeeksGenerator() {
   const [cardList, setCardList] = useState([]);
-  const [counter, setCounter] = useState(currentWeek);
+  const [counter, setCounter] = useState(getWeekNumber());
   const [iCounter, setICounter] = useState(i);
+  const months = getAllMondaysOfAYear()
 
   const handleChange = (event) => {
     setCounter(counter + 1);
@@ -18,8 +18,8 @@ function WeeksGenerator() {
     setCardList(cardList.concat(
       <Cards 
         key={counter} weeksCounter={counter} 
-        mondayCounter={allMondaysOfAYear[iCounter].date} 
-        monthCounter={allMondaysOfAYear[iCounter].month} 
+        mondayCounter={months[iCounter].date} 
+        monthCounter={months[iCounter].month} 
       />
     ));
   };

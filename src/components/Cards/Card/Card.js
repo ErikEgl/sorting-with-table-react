@@ -11,8 +11,7 @@ function Card(props) {
       <div className={`card px-3 ${checked ? "bg-danger" : ""}`}>
         <div className="d-flex justify-content-between align-items-center gap-2">
           <div className="m-0 d-flex gap-2 justify-content-between w-100">
-            <label
-              className="p-2 w-100 d-flex gap-2 align-items-start align-items-sm-center flex-column flex-sm-row"
+            <label className="p-2 w-100 d-flex gap-2 align-items-start align-items-sm-center flex-column flex-sm-row"
               htmlFor={`week-${props.weeksCounter}-id-${props.id}`}
             >
               <Badge className="border border-light" bg="warning" text="dark">
