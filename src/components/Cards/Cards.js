@@ -10,7 +10,7 @@ function Cards(props) {
     <>
       
       <td>
-        <span>Неделя {props.weeksCounter} от {props.mondayCounter} {props.monthCounter} </span>
+        <span>Неделя <time>{props.weeksCounter}</time> от <time>{props.mondayCounter} {props.monthCounter}</time></span>
           {cardItem}
         </td>
     </>

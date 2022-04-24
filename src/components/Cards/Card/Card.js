@@ -16,9 +16,9 @@ function Card(props) {
               htmlFor={`week-${props.weeksCounter}-id-${props.id}`}
             >
               <Badge className="border border-light" bg="warning" text="dark">
-                <small>Н {props.weeksCounter}</small> 
+                <small>Н <time>{props.weeksCounter}</time></small> 
                 <br/>
-                <small>от {props.mondayCounter} {props.monthCounter} </small>       
+                <small>от <time>{props.mondayCounter} {props.monthCounter}</time> </small>       
               </Badge>
               {props.name} занят?{" "}
               <span className="isChecked">{`${checked ? "Да" : "Нет"}`}</span>
