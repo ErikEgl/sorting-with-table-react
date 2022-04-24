@@ -15,16 +15,18 @@ function Card(props) {
               className="p-2 w-100 d-flex gap-2 align-items-start align-items-sm-center flex-column flex-sm-row"
               htmlFor={`week-${props.weeksCounter}-id-${props.id}`}
             >
-              <Badge bg="warning" text="dark">
-                Н {props.weeksCounter}
+              <Badge className="border border-light" bg="warning" text="dark">
+                <small>Н {props.weeksCounter}</small> 
+                <br/>
+                <small>от {props.mondayCounter} {props.monthCounter} </small>       
               </Badge>
               {props.name} занят?{" "}
               <span className="isChecked">{`${checked ? "Да" : "Нет"}`}</span>
-              <Badge bg={`${props.elder ? "danger" : "success"}`} text="light">
-                {`${props.elder == true ? "С" : "СП/Б"}`}
-                </Badge>
-              <Badge bg={`${props.category === "ms" ? "badge bg-danger" : "badge bg-primary"}`} text="light">
-                {`${props.category === "ms" ? "Микрофон/Сцена" : "Аудио/Видео"}`}
+              <Badge className="border border-light" bg={`${props.elder ? "danger" : "success"}`} text="light">
+                  <small>{`${props.elder == true ? "С" : "СП/Б"}`}</small>
+              </Badge>
+              <Badge className="border border-light" bg={`${props.category === "ms" ? "badge bg-danger" : "badge bg-primary"}`} text="light">
+                <small>{`${props.category === "ms" ? "Микрофон/Сцена" : "Аудио/Видео"}`}</small>
               </Badge>
             </label>
             <input

@@ -4,9 +4,8 @@ import { Table } from "react-bootstrap";
 
 function Cards(props) {
   const cardItem = data.map((item) => {
-    return <Card weeksCounter={props.weeksCounter} key={item.id} {...item} />;
+    return <Card weeksCounter={props.weeksCounter} mondayCounter={props.mondayCounter} monthCounter={props.monthCounter} key={item.id} {...item} />;
   });
-
   return (
     <>
       

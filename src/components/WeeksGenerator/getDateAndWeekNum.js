@@ -12,9 +12,12 @@ function getMondayOfCurrentWeek() {
   const first = today.getDate() - (today.getDay() || 7) + 1; // (today.getDay()||7) //if first val is 0 (false) (sunday) then it will print 7
   const MonthsInfo = new Date(today.setDate(first));
   const mondayMonthsName = MonthsInfo.toLocaleString("default", {
-    month: "long",
+    month: "short",
   });
   const monday = new Date(today.setDate(first)).getDate();
+  // console.log(today.toLocaleString("default", {
+  //   month: "short",
+  // }));
   return [monday, mondayMonthsName];
 }
 
@@ -22,29 +25,28 @@ export const mondayAndMonthOfCurrentWeek = getMondayOfCurrentWeek();
 
 function getAllMondaysOfAYear() {
   let d = new Date(),
-    month = d.getMonth(),
     mondays = [];
-  // d.setDate(27);
 
   // Get nearest Monday
   while (d.getDay() !== 1) {
     d.setDate(d.getDate() - 1);
   }
-  console.log(d); //18apr
+
   // Get all the other Mondays in the month and year
   while (d.getMonth()) {
     let pushDate = new Date(d.getTime());
     const dateObj = {
       date: pushDate.getDate(),
-      month: pushDate.getMonth() + 1,
+      month: pushDate.toLocaleString("default", {
+        month: "short",
+      }),
       year: pushDate.getFullYear(),
     };
     mondays.push(dateObj);
-    // console.log(d); all mondays iterating
+
     d.setDate(d.getDate() + 7);
   }
-  console.log(mondays[3]);
   return mondays;
 }
 
-export const allMondaysOfAYear = getAllMondaysOfAYear()
+export const allMondaysOfAYear = getAllMondaysOfAYear();
