@@ -38,7 +38,7 @@ function WeeksGenerator() {
             </Button>
           </Row>
           <Row className="">
-            <Table className="position-relative" responsive>
+            <Table className="position-relative " responsive>
               <thead>
                 <tr>
                   <th>Недели</th>

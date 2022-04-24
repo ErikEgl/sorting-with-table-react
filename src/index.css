@@ -11159,8 +11159,10 @@ p {
   gap: 1rem;
 }
 
-.weeksGenerator {
-  padding: 15px 0;
+@media screen and (min-width: 992px) {
+  .table-responsive {
+    height: calc(100vh - 120px);
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

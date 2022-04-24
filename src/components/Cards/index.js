@@ -1,6 +1,5 @@
 import Card from "./Card/Card";
 import data from "./data";
-import { Table } from "react-bootstrap";
 
 function Cards(props) {
   const cardItem = data.map((item) => {
