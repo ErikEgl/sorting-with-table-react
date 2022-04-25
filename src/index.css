@@ -11124,6 +11124,7 @@ body {
   margin: 0;
   padding: 0;
   color: #222222;
+  background-color: #e6e6e6;
 }
 
 *, *::before, *::after {
@@ -11138,6 +11139,27 @@ h1, .h1 {
 
 p {
   font-size: 1rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #72abfe;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #bed8fe;
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #0368fd;
 }
 
 .info {

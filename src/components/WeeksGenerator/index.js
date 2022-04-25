@@ -32,7 +32,7 @@ function WeeksGenerator() {
     <>
       <section className="cards-wrap">
         <Container>
-          <Row className="">
+          <Row className="py-3">
             <Button key={counter} onClick={handleChange}>
               Добавь неделю
             </Button>

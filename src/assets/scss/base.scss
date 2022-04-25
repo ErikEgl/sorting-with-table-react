@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   color: $main-txt-color;
-  // background-color: ;
+  background-color: lighten($main-site-color, 90%);
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');   
 

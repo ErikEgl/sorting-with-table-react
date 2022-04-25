@@ -1,0 +1,20 @@
+/* width */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: lighten($primary, 20%);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: lighten($primary, 35%);
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: darken($primary, 2%);
+}
