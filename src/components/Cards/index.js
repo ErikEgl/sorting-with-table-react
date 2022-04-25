@@ -1,5 +1,5 @@
 import Card from "./Card/Card";
-import data from "./data";
+import data from "../../data/data";
 
 function Cards(props) {
   const cardItem = data.map((item) => {
