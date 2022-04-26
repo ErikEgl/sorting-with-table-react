@@ -11141,25 +11141,16 @@ p {
   font-size: 1rem;
 }
 
-/* width */
-::-webkit-scrollbar {
-  width: 1rem;
+.h-55 {
+  height: 55px;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background-color: #72abfe;
+.w-300 {
+  width: 300px;
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background-color: #bed8fe;
-  border-radius: 2px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background-color: #0368fd;
+.w-115 {
+  width: 115px;
 }
 
 .info {
@@ -11173,12 +11164,26 @@ p {
   line-height: 0;
 }
 
+.date-title {
+  white-space: nowrap;
+  width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .cards {
   padding: 20px 0;
 }
 .cards .container {
   display: flex;
   gap: 1rem;
+}
+
+.card .isChecked {
+  width: 45px;
+}
+.card .lh-0 {
+  line-height: 0;
 }
 
 @media screen and (min-width: 992px) {

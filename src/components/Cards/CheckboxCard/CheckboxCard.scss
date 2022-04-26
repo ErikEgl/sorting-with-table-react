@@ -18,3 +18,9 @@
     line-height: 0;
   }
 }
+.date-title {
+  white-space: nowrap; 
+  width: 100px; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
