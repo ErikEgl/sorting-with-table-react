@@ -1,19 +1,18 @@
-import Card from "./Card/Card";
+import CheckboxCard from "./CheckboxCard/CheckboxCard";
 import data from "../../data/data";
 
-function Cards(props) {
+function CheckboxCards(props) {
   const cardItem = data.map((item) => {
-    return <Card weeksCounter={props.weeksCounter} mondayCounter={props.mondayCounter} monthCounter={props.monthCounter} key={item.id} {...item} />;
+    return <CheckboxCard iCounter={props.iCounter} weeksCounter={props.weeksCounter} mondayCounter={props.mondayCounter} monthCounter={props.monthCounter} key={item.id} {...item} />;
   });
   return (
     <>
-      
-      <td>
-        <span>Неделя <time>{props.weeksCounter}</time> от <time>{props.mondayCounter} {props.monthCounter}</time></span>
+      <td className="">
+        <small className="date-title">Нед. <time>{props.weeksCounter}</time> от <time>{props.mondayCounter} {props.monthCounter}</time></small >
           {cardItem}
         </td>
     </>
   );
 }
 
-export default Cards;
+export default CheckboxCards;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Cards from "../Cards";
-import ReactDOM from "react-dom";
+import CheckboxCards from "../Cards";
+import InfoCards from "../InfoCards";
 import { Button, Row, Container, Table } from "react-bootstrap";
 import { getWeekNumber, getAllMondaysOfAYear } from "../../helpers";
 
@@ -16,22 +16,21 @@ function WeeksGenerator() {
     setCounter(counter + 1);
     setICounter(iCounter + 1);
     setCardList(cardList.concat(
-      <Cards 
+      <CheckboxCards 
         key={counter} weeksCounter={counter} 
         mondayCounter={months[iCounter].date} 
         monthCounter={months[iCounter].month} 
+        iCounter={iCounter}
       />
     ));
   };
 
 
 
-
-
   return (
     <>
       <section className="cards-wrap">
-        <Container>
+        <Container fluid>
           <Row className="py-3">
             <Button key={counter} onClick={handleChange}>
               Добавь неделю
@@ -45,7 +44,10 @@ function WeeksGenerator() {
                 </tr>
               </thead>
               <tbody>
-                <tr>{cardList}</tr>
+                <tr>      
+                <InfoCards iCounter={iCounter} key={counter}/>
+                {cardList}
+                </tr>
               </tbody>
             </Table>
           </Row>
