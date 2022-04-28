@@ -11153,6 +11153,14 @@ p {
   width: 115px;
 }
 
+.mw-140 {
+  min-width: 140px;
+}
+
+.mw-300 {
+  min-width: 300px;
+}
+
 .info {
   padding: 15px 0;
 }

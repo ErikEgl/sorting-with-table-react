@@ -7,7 +7,7 @@ function CheckboxCards(props) {
   });
   return (
     <>
-      <td className="">
+      <td className="mw-140">
         <small className="date-title">Нед. <time>{props.weeksCounter}</time> от <time>{props.mondayCounter} {props.monthCounter}</time></small >
           {cardItem}
         </td>

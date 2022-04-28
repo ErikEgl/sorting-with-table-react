@@ -17,8 +17,8 @@ function InfoCards(props) {
 
   return (
     <>
-    <td className={`w-300 ${props.iCounter > 0 && props.iCounter < 12 ? "d-table-cell" : "d-block"}`}>
-    <span>Братья</span>
+    <td className={`w-300 mw-300 ${props.iCounter > 0 && props.iCounter < 12 ? "d-table-cell" : "d-block"}`}>
+      <span>Братья</span>
       {infoCardItem}
     </td>
     </>

@@ -44,8 +44,8 @@ function WeeksGenerator() {
                 </tr>
               </thead>
               <tbody>
-                <tr>      
-                <InfoCards iCounter={iCounter} key={counter}/>
+                <tr> 
+                  {iCounter ? <InfoCards iCounter={iCounter} key={counter}/> : '' }     
                 {cardList}
                 </tr>
               </tbody>
