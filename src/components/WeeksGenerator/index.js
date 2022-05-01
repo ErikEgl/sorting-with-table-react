@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import CheckboxCards from "../Cards";
 import InfoCards from "../InfoCards";
+import ResTableWrap from "../ResTableWrap";
 import { Button, Row, Container, Table } from "react-bootstrap";
 import { getWeekNumber, getAllMondaysOfAYear } from "../../helpers";
 
@@ -53,6 +54,7 @@ function WeeksGenerator() {
           </Row>
         </Container>
       </section>
+      {iCounter ? <ResTableWrap iCounter={iCounter}/> : '' }
     </>
   );
 }
