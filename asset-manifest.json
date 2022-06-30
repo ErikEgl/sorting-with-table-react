@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sorting-with-table-react/static/css/main.cdbcb168.css",
+    "main.js": "/sorting-with-table-react/static/js/main.863c6c4e.js",
+    "index.html": "/sorting-with-table-react/index.html",
+    "main.cdbcb168.css.map": "/sorting-with-table-react/static/css/main.cdbcb168.css.map",
+    "main.863c6c4e.js.map": "/sorting-with-table-react/static/js/main.863c6c4e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cdbcb168.css",
+    "static/js/main.863c6c4e.js"
+  ]
+}
