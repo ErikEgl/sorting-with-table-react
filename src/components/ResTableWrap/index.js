@@ -6,7 +6,7 @@ function ResTableWrap(props) {
   const num = 6;
   return (
     <>
-      <section className="info">
+      {/* <section className="info">
         <Container>
           <Row className="">
             <Col>
@@ -32,7 +32,7 @@ function ResTableWrap(props) {
             </Col>
           </Row>
         </Container>
-      </section>
+      </section> */}
     </>
   );
 }
