@@ -4,7 +4,7 @@ import { Badge } from "react-bootstrap";
 function CheckboxCard(props) {
   const [checked, setChecked] = React.useState(false);
   const handleChange = () => {
-    setChecked(!checked);
+    setChecked(prevState => !prevState);
   };
   return (
     <>
