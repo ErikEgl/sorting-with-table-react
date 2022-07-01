@@ -109,35 +109,40 @@ export default [
     },
     {
         id: 19,
-        name: "Маренков Леонид",
+        name: "Кисыличак Максим",
         category: "av",
         elder: false,
     },
     {
         id: 20,
-        name: "Сультс Роман",
+        name: "Маренков Леонид",
         category: "av",
         elder: false,
     },
     {
         id: 21,
-        name: "Федотов Егор",
+        name: "Сультс Роман",
         category: "av",
         elder: false,
     },
     {
         id: 22,
-        name: "Эглиенс Эрик",
+        name: "Федотов Егор",
         category: "av",
         elder: false,
     },
     {
         id: 23,
+        name: "Эглиенс Эрик",
+        category: "av",
+        elder: false,
+    },
+    {
+        id: 24,
         name: "Юшко Вольдемар",
         category: "av",
         elder: false,
     },
-    
 ]
 
  
