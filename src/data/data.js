@@ -129,12 +129,6 @@ export default [
     },
     {
         id: nanoid(),
-        name: "Маренков Леонид",
-        category: "av",
-        elder: false,
-    },
-    {
-        id: nanoid(),
         name: "Сультс Роман",
         category: "av",
         elder: false,
