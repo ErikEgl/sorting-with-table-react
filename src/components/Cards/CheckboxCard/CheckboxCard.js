@@ -5,7 +5,18 @@ function CheckboxCard(props) {
   const [checked, setChecked] = React.useState(false);
   const handleChange = () => {
     setChecked(prevState => !prevState);
+    if(!localStorage.getItem(`week-${props.weeksCounter}-id-${props.id}`)) {
+      localStorage.setItem(`week-${props.weeksCounter}-id-${props.id}`, `week-${props.weeksCounter}-id-${props.id}`);
+    } else if (localStorage.getItem(`week-${props.weeksCounter}-id-${props.id}`)) {
+      localStorage.removeItem(`week-${props.weeksCounter}-id-${props.id}`)
+    }
   };
+  useEffect(() => {
+    if(localStorage.getItem(`week-${props.weeksCounter}-id-${props.id}`)) {
+      setChecked(prevState => !prevState);
+    }
+  }, [])
+
   return (
     <>
       <div className={`h-55 card px-2 ${checked ? "bg-danger" : ""}`}>
