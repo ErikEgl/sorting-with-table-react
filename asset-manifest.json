@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/sorting-with-table-react/static/css/main.fc931096.css",
-    "main.js": "/sorting-with-table-react/static/js/main.c9b0d2b7.js",
+    "main.css": "/sorting-with-table-react/static/css/main.9d99b5e5.css",
+    "main.js": "/sorting-with-table-react/static/js/main.1a54cc58.js",
     "index.html": "/sorting-with-table-react/index.html",
-    "main.fc931096.css.map": "/sorting-with-table-react/static/css/main.fc931096.css.map",
-    "main.c9b0d2b7.js.map": "/sorting-with-table-react/static/js/main.c9b0d2b7.js.map"
+    "main.9d99b5e5.css.map": "/sorting-with-table-react/static/css/main.9d99b5e5.css.map",
+    "main.1a54cc58.js.map": "/sorting-with-table-react/static/js/main.1a54cc58.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc931096.css",
-    "static/js/main.c9b0d2b7.js"
+    "static/css/main.9d99b5e5.css",
+    "static/js/main.1a54cc58.js"
   ]
 }
