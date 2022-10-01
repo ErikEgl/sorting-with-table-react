@@ -1,8 +1,8 @@
-import React from "react";
+import {useState, useEffect} from "react";
 import { Badge } from "react-bootstrap";
 
 function CheckboxCard(props) {
-  const [checked, setChecked] = React.useState(false);
+  const [checked, setChecked] = useState(false);
   const handleChange = () => {
     setChecked(prevState => !prevState);
     if(!localStorage.getItem(`week-${props.weeksCounter}-id-${props.id}`)) {
