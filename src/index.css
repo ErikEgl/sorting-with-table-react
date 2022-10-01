@@ -58,6 +58,19 @@ p {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.date-title + button {
+  padding: 0 10px;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 2px;
+  border: 1px solid lightgray;
+}
+.date-title + button:hover {
+  background-color: darkgray;
+}
 
 .cards {
   padding: 20px 0;
