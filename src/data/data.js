@@ -24,12 +24,6 @@ export default [
         elder: true,
     },
     {
-        id: "ЕминскийСергей",
-        name: "Еминский Сергей",
-        category: "ms",
-        elder: true,
-    },
-    {
         id: "КлепиковВалерий",
         name: "Клепиков Валерий",
         category: "ms",
