@@ -1,14 +1,12 @@
 export default function getAllMondaysOfAYear() {
-  let d = new Date(),
-    mondays = [];
-
+  let d = new Date();
+  let mondays = [];
   // Get nearest Monday
-  while (d.getDay() !== 1) {
-    d.setDate(d.getDate() - 1);
-  }
+  d.setDate(d.getDate() - (d.getDay() - 1));
 
   // Get all the other Mondays in the month and year
-  while (d.getMonth()) {
+  const numWeeks = 52; // or 53 if it's a leap year
+  for (let i = 0; i < numWeeks; i++) {
     let pushDate = new Date(d.getTime());
     const dateObj = {
       date: pushDate.getDate(),
@@ -21,5 +19,6 @@ export default function getAllMondaysOfAYear() {
 
     d.setDate(d.getDate() + 7);
   }
+
   return mondays;
 }
