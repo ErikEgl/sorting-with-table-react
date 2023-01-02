@@ -31,7 +31,7 @@ function CheckboxCards(props) {
     <>
       <td onClick={handleClick} style={styles} className="mw-140">
         <div className="d-flex justify-content-between align-items-center gap-2">
-          <small className="date-title">
+          <small title={`Неделя ${props.weeksCounter} от ${props.mondayCounter} ${props.monthCounter}`} className="date-title">
             Нед. <time>{props.weeksCounter}</time> от{" "}
             <time>
               {props.mondayCounter} {props.monthCounter}

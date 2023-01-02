@@ -19,7 +19,9 @@ function CheckboxCard(props) {
 
   return (
     <>
-      <div className={`h-55 card px-2 ${checked ? "bg-danger" : ""}`}>
+      <div 
+      title={`${props.name} | Неделя ${props.weeksCounter} от ${props.mondayCounter} ${props.monthCounter} `} 
+      className={`h-55 card px-2 ${checked ? "bg-danger" : ""}`}>
         <div className="d-flex justify-content-between align-items-center gap-2">
           <div className="m-0 d-flex gap-2 position-relative justify-content-between w-100">
             <label className="p-2 w-100 d-flex gap-2 align-items-start align-items-sm-center flex-column flex-sm-row"
