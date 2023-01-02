@@ -20,9 +20,11 @@
 }
 .date-title {
   white-space: nowrap; 
-  width: 100px; 
   overflow: hidden;
   text-overflow: ellipsis; 
+  @include media-max($sm) {
+    width: 100px; 
+  };
   & + button {
     padding: 0 10px;
     border: 0;
