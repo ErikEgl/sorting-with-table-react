@@ -54,9 +54,13 @@ p {
 
 .date-title {
   white-space: nowrap;
-  width: 100px;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+@media screen and (max-width: 576px) {
+  .date-title {
+    width: 100px;
+  }
 }
 .date-title + button {
   padding: 0 10px;
